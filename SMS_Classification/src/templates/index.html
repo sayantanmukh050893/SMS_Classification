@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Message Classification</title>
+  </head>
+  <body>
+    <h1 align="center">Message Classification</h1>
+    <form align="center" action="{{ url_for('predict_front_end')}}" method="post">
+
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message"><br><br>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+    </form>
+
+  </body>
+</html>
