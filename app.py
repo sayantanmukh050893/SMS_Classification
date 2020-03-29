@@ -4,6 +4,7 @@ from util import Util
 util = Util()
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfTransformer,CountVectorizer
+import nltk
 
 output_model_path = "E://Study//GitLab//SMS_Classification//src//model.pkl"
 testing_data_path = "E://Study//GitLab//SMS_Classification//data//testing_data.csv"

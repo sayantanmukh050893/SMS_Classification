@@ -5,7 +5,6 @@ import pandas as pd
 import pickle
 import nltk
 #os.chdir("E://Study//GitLab//SMS_Classification//data//training_data.csv")
-nltk.download('all')
 
 training_data = pd.read_csv("E://Study//GitLab//SMS_Classification//data//training_data.csv",encoding="utf-8")
 #util.show_column_names(training_data)
