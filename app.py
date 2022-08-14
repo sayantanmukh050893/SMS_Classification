@@ -54,13 +54,13 @@ def predict_front_end():
     result = None
     if(y_pred[0]==0):
         result = "This is a normal message"
-        image = "images/you-are-safe.jpg"
+        image = "https://github.com/sayantanmukh050893/SMS_Classification/blob/master/templates/images/you-are-safe.jpg?raw=true"
         #result = "E://Study//GitLab//SMS_Classification//src//templates//normal.jpg"
     elif(y_pred[0]==1):
         result = "This is a spam message"
-        image = "images/youve-been-hacked.png"
+        image = "https://github.com/sayantanmukh050893/SMS_Classification/blob/master/templates/images/youve-been-hacked.png?raw=true"
         #result = "E://Study//GitLab//SMS_Classification//src//templates//spam.jpg"
-    return render_template("result.html",image=image)
+    return render_template("result.html",image_location=image)
 
 if __name__ == "__main__":
     app.run(debug=True)
