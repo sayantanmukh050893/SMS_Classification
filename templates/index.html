@@ -119,12 +119,9 @@
     
     <div class="testbox">
       <form align="center" action="{{ url_for('predict_front_end')}}" method="post">
-        <div class="banner">
-
-        </div>
         <div class="item">
           <p>Type Message</p>
-          <textarea rows="15" required></textarea>
+          <textarea rows="15" id="message" name="message" required></textarea>
         </div>
         
         <div class="btn-block">
