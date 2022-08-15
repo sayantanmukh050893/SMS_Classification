@@ -8,7 +8,7 @@
       html, body {
       min-height: 100%;
       }
-      body, div, form, input, textarea, p { 
+      body, div, form, input, textarea, p {
       padding: 0;
       margin: 0;
       outline: none;
@@ -36,12 +36,12 @@
       padding: 20px;
       border-radius: 6px;
       background: #fff;
-      box-shadow: 0 0 10px 0 #cc0052; 
+      box-shadow: 0 0 10px 0 #cc0052;
       }
       .banner {
       position: relative;
       height: 400px;
-      background-image: url('assets/phishing-banner.png');     
+      background-image: url('assets/phishing-banner.png');
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -50,7 +50,7 @@
       }
       .banner::after {
       content: "";
-      background-color: rgba(0, 0, 0, 0.4); 
+      background-color: rgba(0, 0, 0, 0.4);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -88,7 +88,7 @@
       width: 150px;
       padding: 10px;
       border: none;
-      border-radius: 5px; 
+      border-radius: 5px;
       background: #cc0052;
       font-size: 16px;
       color: #fff;
@@ -116,17 +116,14 @@
     </style>
   </head>
   <body>
-    
+
     <div class="testbox">
       <form align="center" action="{{ url_for('predict_front_end')}}" method="post">
-        <div class="banner">
-
-        </div>
         <div class="item">
           <p>Type Message</p>
-          <textarea rows="15" required></textarea>
+          <textarea rows="15" id="message" name="message" required></textarea>
         </div>
-        
+
         <div class="btn-block">
           <button type="submit">CHECK</button>
         </div>
